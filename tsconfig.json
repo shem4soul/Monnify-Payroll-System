@@ -1,9 +1,9 @@
 {
   "compilerOptions": {
-    "module": "nodenext",
-    "moduleResolution": "node",
-    "target": "esnext",
-    "esModuleInterop": true,
+    "module": "nodenext", // ESM modules
+    "moduleResolution": "nodenext", // use nodenext for correct Node ESM resolution
+    "target": "ESNext",
+    "esModuleInterop": true, // allow default imports from CommonJS
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "verbatimModuleSyntax": true,
@@ -11,6 +11,8 @@
     "skipLibCheck": true,
     "sourceMap": true,
     "declaration": true,
-    "declarationMap": true
+    "declarationMap": true,
+    "resolveJsonModule": true, // if you import .json configs
+    "types": ["node"] // include Node.js types
   }
 }
